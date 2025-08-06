@@ -1,0 +1,331 @@
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #98ecec;
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* === Layout Container === */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* === Navigation Bar === */
+nav {
+  background-color: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd369;
+  transform: scale(1.05);
+}
+
+/* === Page Sections === */
+.section {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-4px);
+}
+
+/* === Headings === */
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 3px solid #f4d03f;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* === Paragraphs === */
+p {
+  margin-bottom: 1.2rem;
+  color: #444;
+}
+
+/* === Buttons (Optional) === */
+.button {
+  display: inline-block;
+  background-color: #222;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+/* === Image Grid (for Gallery) === */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #eee;
+  transition: transform 0.3s;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.04);
+}
+
+/* === ✨ Centered Big Content Box (for Homepage or similar) === */
+.center-box {
+  background-color: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.center-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.center-box .highlight {
+  color: #0070f3;
+  font-weight: bold;
+}
+
+.center-box .tagline {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.center-box .description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.center-box .buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.center-box .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.center-box .primary-btn {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+}
+
+.center-box .primary-btn:hover {
+  background-color: #005ac1;
+  transform: scale(1.05);
+}
+
+.center-box .secondary-btn {
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.center-box .secondary-btn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+/* === ✨ Advanced Contact Page Styling === */
+.contact-box {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 2rem auto;
+  transition: transform 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-6px);
+}
+
+.contact-box p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.1);
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #0070f3;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start;
+}
+
+.contact-form button:hover {
+  background-color: #005ac1;
+  transform: scale(1.03);
+}
+
+/* === Footer === */
+footer {
+  background-color: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  border-top: 2px solid #333;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-box {
+    padding: 2rem;
+  }
+
+  .contact-form button[type="submit"] {
+    width: 100%;
+    text-align: center;
+  }
+
+  .center-box {
+    max-width: 90%;
+    padding: 2rem 1.5rem;
+  }
+
+  .center-box .buttons {
+    flex-direction: column;
+  }
+
+  .center-box .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box {
+    padding: 1.5rem;
+  }
+}
